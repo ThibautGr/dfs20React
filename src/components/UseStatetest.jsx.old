@@ -1,0 +1,26 @@
+import React, {useState} from 'react';
+/*
+* fonction test de logique des use state
+ */
+
+const  UseStatetest = () => {
+    let [state, setState] = useState(0)
+
+        function increment(){
+            setState(state+1)
+        }
+
+        function decrement(){
+            setState(state-1)
+        }
+
+    return (
+            <div>
+                <p>{state}</p>
+                <button type={"button"} onClick={increment} >increment</button>
+                <button type={"button"} onClick={decrement} >decrement</button>
+            </div>
+    );
+}
+
+export default UseStatetest

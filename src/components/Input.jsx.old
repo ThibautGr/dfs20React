@@ -1,0 +1,15 @@
+import React, {Fragment} from 'react';
+
+let Input = (props) => {
+    return(
+            props.exam.map((elm,index)=>(
+                <Fragment>
+                    <label htmlFor=""></label>
+                    <label form={elm.index}>{elm.question}</label>
+                    <input id={elm.index} type={elm.answer.type} name={elm.name}/>
+                    <br/>
+                </Fragment>
+            ))
+    )
+}
+export default Input;
